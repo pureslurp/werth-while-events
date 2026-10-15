@@ -1,0 +1,356 @@
+.page {
+  --paper: #e7eef2;
+  --ink: #1c2b33;
+  --cherry: #b5454b;
+  --on-accent: #f7f3ea;
+  --pine: #3c5560;
+  --frame: #d5e0e6;
+  --dining: #1c2b33;
+  --ivory: #f7f3ea;
+  --font-mono: var(--font-body);
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Palatino, serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+}
+
+.headerInner,
+.letter,
+.section,
+.ask,
+.footer {
+  width: min(68rem, calc(100% - 2 * clamp(1.25rem, 4vw, 3rem)));
+  margin: 0 auto;
+}
+
+.headerInner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem 1.5rem;
+  padding: 1.1rem 0;
+}
+
+.brand {
+  color: var(--ink);
+  font-family: var(--font-display), "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+}
+
+.nav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.hero {
+  padding: clamp(3.5rem, 10vw, 7rem) clamp(1.25rem, 4vw, 3rem) clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+}
+
+.place {
+  color: var(--pine);
+}
+
+.name,
+.events,
+.letter h2,
+.offer h2,
+.hosts h2,
+.ask h2,
+.saturday h3 {
+  font-family: var(--font-display), "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 0.92;
+}
+
+.name {
+  display: block;
+  font-size: clamp(4rem, 9vw, 7rem);
+}
+
+.events {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.kicker {
+  margin-top: 1.5rem;
+  font-size: clamp(1.6rem, 3vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.heroButton {
+  margin-top: 1.75rem;
+}
+
+.letter {
+  display: grid;
+  gap: 2rem;
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.letterGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 0.9fr);
+  gap: 2rem 3rem;
+  align-items: start;
+}
+
+.letter h2 {
+  max-width: 16ch;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+
+.copy {
+  display: grid;
+  gap: 1rem;
+  max-width: 38rem;
+}
+
+.copy a {
+  color: var(--ink);
+}
+
+.section,
+.ask {
+  scroll-margin-top: 4.5rem;
+  padding-bottom: clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.eyebrow,
+.price,
+.role,
+.note {
+  color: var(--pine);
+}
+
+.eyebrow {
+  margin-bottom: 1.25rem;
+}
+
+.offer,
+.hosts {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(14rem, 0.7fr);
+  gap: 2.5rem 4rem;
+  align-items: start;
+}
+
+.offer h2,
+.hosts h2 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+.price,
+.role {
+  margin: 0.7rem 0 1rem;
+}
+
+.lead {
+  max-width: 36rem;
+  margin-bottom: 1.1rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0.1rem;
+  top: 0.48em;
+  width: 0.38rem;
+  height: 0.38rem;
+  background: var(--cherry);
+  transform: rotate(45deg);
+}
+
+.saturday {
+  margin-top: 2.5rem;
+  max-width: 36rem;
+  padding: 1.7rem 1.45rem 1.55rem;
+  background: var(--ivory);
+  border: 1px solid color-mix(in srgb, var(--ink) 34%, transparent);
+  box-shadow:
+    inset 0 0 0 6px var(--ivory),
+    inset 0 0 0 7px color-mix(in srgb, var(--cherry) 72%, var(--ink));
+}
+
+.saturday h3 {
+  font-size: clamp(2rem, 3.4vw, 2.7rem);
+  text-align: center;
+}
+
+.saturday h3::after {
+  content: "";
+  display: block;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin: 0.75rem auto 0;
+  background: var(--cherry);
+  transform: rotate(45deg);
+}
+
+.note {
+  max-width: 28rem;
+  margin: 0.85rem auto 0;
+  text-align: center;
+}
+
+.saturday dl {
+  display: grid;
+  margin: 1.35rem 0 0;
+}
+
+.saturday div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 0.2rem 0.9rem;
+  align-items: baseline;
+  padding: 0.7rem 0.35rem 0.7rem 1.45rem;
+}
+
+.saturday div::before {
+  content: "";
+  position: absolute;
+  left: 0.18rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: color-mix(in srgb, var(--cherry) 55%, var(--ink));
+}
+
+.saturday div:first-child::before {
+  top: 1.12rem;
+}
+
+.saturday div:last-child::before {
+  bottom: calc(100% - 1.12rem);
+}
+
+.saturday div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--cherry);
+  transform: rotate(45deg);
+}
+
+.saturday dt {
+  font-family: var(--font-display), "Times New Roman", serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.saturday dd {
+  margin: 0;
+}
+
+.aboutLead {
+  max-width: 32rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.hosts {
+  grid-template-columns: 1fr 1fr;
+}
+
+.hosts h2 {
+  margin-top: 1rem;
+}
+
+.ask h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: clamp(3.2rem, 8vw, 5.2rem);
+}
+
+.seal {
+  width: 0.7rem;
+  height: 0.7rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--cherry);
+  transform: translateY(-0.2em);
+}
+
+.footer {
+  display: grid;
+  gap: 0.35rem;
+  padding: 2.5rem 0 3rem;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+.footerName {
+  font-family: var(--font-display), "Times New Roman", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer a {
+  color: var(--ink);
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  .letterGrid,
+  .offer,
+  .hosts {
+    grid-template-columns: 1fr;
+  }
+}

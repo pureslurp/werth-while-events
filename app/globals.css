@@ -1,0 +1,107 @@
+:root {
+  --dining: #1c2420;
+  --paper: #e8ebe4;
+  --cherry: #d6453d;
+  --pine: #2f4a3c;
+  --brass: #c4a574;
+  --ivory: #f7f3ea;
+  --ink: #1c2420;
+  --frame: #d7ddd0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--dining);
+  outline-offset: 3px;
+}
+
+.onDark :focus-visible {
+  outline-color: var(--ivory);
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 30;
+  background: var(--ivory);
+  color: var(--dining);
+  padding: 0.55rem 0.8rem;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.85rem;
+}
+
+.skip:focus {
+  top: 0.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: var(--cherry);
+  color: var(--on-accent, var(--ivory));
+  cursor: pointer;
+  font-family: var(--font-display), "Arial Narrow", Impact, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  padding: 0.85rem 1.15rem 0.72rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  filter: brightness(0.94);
+}
+
+.button:disabled {
+  cursor: wait;
+  filter: none;
+  opacity: 0.72;
+}
+
+::selection {
+  background: var(--dining);
+  color: var(--ivory);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button:hover {
+    filter: none;
+  }
+}

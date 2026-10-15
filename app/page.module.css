@@ -1,0 +1,48 @@
+.main {
+  width: min(40rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: clamp(3.5rem, 10vw, 6rem) 0;
+}
+
+.business {
+  margin-bottom: 0.75rem;
+  color: var(--pine);
+  font-family: var(--font-body), Palatino, serif;
+}
+
+.main h1 {
+  margin-bottom: 0.85rem;
+  font-family: var(--font-body), Palatino, serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.intro {
+  max-width: 34rem;
+}
+
+.list {
+  display: grid;
+  gap: 2rem;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list h2 {
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.list p {
+  margin: 0.4rem 0 0.7rem;
+}
+
+.list a {
+  color: var(--ink);
+  font-family: var(--font-body), Palatino, serif;
+}

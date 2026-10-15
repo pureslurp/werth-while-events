@@ -1,0 +1,23 @@
+.main {
+  width: min(40rem, calc(100% - 2 * clamp(1.25rem, 4vw, 3rem)));
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5.5rem) 0 clamp(4rem, 9vw, 6rem);
+}
+
+.main h1 {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-display), "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(3.2rem, 8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.88;
+}
+
+.copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.copy a {
+  color: var(--ink);
+}

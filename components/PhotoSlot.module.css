@@ -1,0 +1,27 @@
+.slot {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: var(--frame);
+}
+
+.portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.landscape {
+  aspect-ratio: 3 / 2;
+}
+
+.label {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  color: var(--pine);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.78rem;
+}
+
+.image {
+  object-fit: cover;
+}

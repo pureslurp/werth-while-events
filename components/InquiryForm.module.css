@@ -1,0 +1,100 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem 1.5rem;
+  max-width: 46rem;
+  margin-top: 2rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  align-content: start;
+}
+
+.wide,
+.actions,
+.formError {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  color: var(--pine);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.8rem;
+}
+
+.control {
+  width: 100%;
+  margin: 0;
+  padding: 0.55rem 0 0.45rem;
+  border: 0;
+  border-bottom: 1px solid var(--pine);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.control::placeholder {
+  color: color-mix(in srgb, var(--pine) 62%, var(--paper));
+}
+
+textarea.control {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+select.control {
+  cursor: pointer;
+}
+
+.error,
+.formError {
+  margin: 0;
+  color: var(--pine);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.formError a {
+  color: var(--ink);
+}
+
+.honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.successBlock {
+  max-width: 16ch;
+}
+
+.successBlock:focus {
+  outline: none;
+}
+
+.success {
+  font-family: var(--font-display), "Arial Narrow", Impact, sans-serif;
+  font-size: clamp(3rem, 7vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.88;
+}
+
+.successBlock p:last-child {
+  margin-top: 1rem;
+  max-width: 28ch;
+}
+
+@media (max-width: 700px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}
