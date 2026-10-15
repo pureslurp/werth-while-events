@@ -17,14 +17,13 @@ export function ReasonLine() {
   }, []);
 
   useEffect(() => {
-    if (reduceMotion) return;
     const id = window.setInterval(() => {
       setIndex((current) => (current + 1) % reasons.length);
     }, 3400);
     return () => window.clearInterval(id);
-  }, [reduceMotion]);
+  }, []);
 
-  const reason = reduceMotion ? reasons[0] : reasons[index];
+  const reason = reasons[index];
 
   return (
     <p className={styles.reason}>
