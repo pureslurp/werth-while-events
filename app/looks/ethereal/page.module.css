@@ -507,6 +507,16 @@
     padding: 1.5rem;
   }
 
+  .serviceHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .price {
+    white-space: normal;
+  }
+
   .timeline {
     padding: 1.5rem;
   }
