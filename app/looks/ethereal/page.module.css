@@ -1,0 +1,489 @@
+.page {
+  --pearl: #f9f7f4;
+  --mist: #e8e3dd;
+  --taupe: #c9beb1;
+  --stone: #9d8f7f;
+  --slate: #6d6458;
+  --charcoal: #3a342d;
+  --blushMist: #e8d5d0;
+  min-height: 100vh;
+  display: flex;
+  background: var(--pearl);
+  color: var(--charcoal);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.sideNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background: var(--pearl);
+  border-right: 1px solid var(--mist);
+  z-index: 20;
+}
+
+.navBrand {
+  font-family: var(--font-display), serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-decoration: none;
+  color: var(--charcoal);
+  margin-bottom: 3rem;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.navLinks a {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--stone);
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: var(--charcoal);
+}
+
+.main {
+  margin-left: 5rem;
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.heroRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 40vw;
+  max-width: 500px;
+  max-height: 500px;
+  border: 1px solid var(--mist);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.place {
+  position: relative;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  position: relative;
+  font-family: var(--font-display), serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+  color: var(--charcoal);
+}
+
+.eventsSubtle {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.3em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
+.heroFlow {
+  position: relative;
+  margin-top: 3rem;
+  max-width: 32rem;
+}
+
+.kicker {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  color: var(--slate);
+  margin-bottom: 1rem;
+}
+
+.intro {
+  padding: clamp(4rem, 10vw, 8rem) clamp(2rem, 6vw, 6rem);
+  background: linear-gradient(180deg, var(--pearl), color-mix(in srgb, var(--mist) 30%, var(--pearl)));
+}
+
+.introSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.intro h2 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+.introCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.7;
+  color: var(--slate);
+}
+
+.introCopy p {
+  margin: 0;
+}
+
+.services {
+  padding: clamp(4rem, 10vw, 8rem) clamp(2rem, 6vw, 6rem);
+  background: var(--pearl);
+}
+
+.sectionLabel {
+  font-family: var(--font-display), serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin: 0 0 3rem;
+  text-align: center;
+}
+
+.serviceCard {
+  max-width: 48rem;
+  margin: 0 auto 3rem;
+  padding: 2.5rem;
+  background: var(--mist);
+  border-radius: 0.25rem;
+}
+
+.serviceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--taupe) 30%, transparent);
+}
+
+.serviceCard h3 {
+  font-family: var(--font-display), serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--charcoal);
+}
+
+.price {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--stone);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.serviceLead {
+  line-height: 1.7;
+  color: var(--slate);
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+  color: var(--slate);
+}
+
+.list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--taupe);
+}
+
+.timeline {
+  max-width: 48rem;
+  margin: 3rem auto 0;
+  padding: 2rem;
+  background: color-mix(in srgb, var(--blushMist) 50%, var(--pearl));
+  border-radius: 0.25rem;
+}
+
+.timeline h4 {
+  font-family: var(--font-display), serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: var(--charcoal);
+}
+
+.timelineNote {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--stone);
+  margin: 0 0 2rem;
+}
+
+.timeline dl {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.timeline div {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1.5rem;
+  align-items: baseline;
+}
+
+.timeline dt {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--stone);
+}
+
+.timeline dd {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--slate);
+}
+
+.about {
+  padding: clamp(4rem, 10vw, 8rem) clamp(2rem, 6vw, 6rem);
+  background: var(--pearl);
+}
+
+.aboutLead {
+  max-width: 40rem;
+  margin: 0 auto 3rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--slate);
+}
+
+.team {
+  display: grid;
+  gap: 4rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.profileText h3 {
+  font-family: var(--font-display), serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+  color: var(--charcoal);
+}
+
+.role {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin: 0 0 1.5rem;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  line-height: 1.7;
+  color: var(--slate);
+}
+
+.bio p {
+  margin: 0;
+}
+
+.contact {
+  padding: clamp(4rem, 10vw, 8rem) clamp(2rem, 6vw, 6rem);
+  background: linear-gradient(180deg, var(--pearl), var(--mist));
+}
+
+.contactInner {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: 400;
+  margin: 0 0 1.5rem;
+  color: var(--charcoal);
+}
+
+.contact p {
+  line-height: 1.7;
+  color: var(--slate);
+  margin: 0 0 1rem;
+}
+
+.contact a {
+  color: var(--stone);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--taupe) 50%, transparent);
+  transition: border-color 0.2s ease;
+}
+
+.contact a:hover {
+  border-bottom-color: var(--taupe);
+}
+
+.footer {
+  padding: 3rem clamp(2rem, 6vw, 6rem);
+  background: var(--mist);
+}
+
+.footerContent {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerName {
+  font-family: var(--font-display), serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  color: var(--charcoal);
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--slate);
+}
+
+.footerInfo p {
+  margin: 0;
+}
+
+.footerInfo a {
+  color: var(--stone);
+  text-decoration: none;
+}
+
+.footerInfo a:hover {
+  text-decoration: underline;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footerLinks a {
+  color: var(--stone);
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerCopy {
+  font-size: 0.85rem;
+  color: var(--taupe);
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .sideNav {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .navBrand {
+    writing-mode: horizontal-tb;
+    margin-bottom: 0;
+  }
+
+  .navLinks {
+    flex-direction: row;
+    writing-mode: horizontal-tb;
+    gap: 1rem;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .introSplit,
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
