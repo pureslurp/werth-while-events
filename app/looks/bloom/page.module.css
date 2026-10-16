@@ -399,6 +399,21 @@
   text-decoration: underline;
 }
 
+.reach :global(.button) {
+  background: var(--leaf);
+  color: var(--petal);
+  border-radius: 2rem;
+  padding: 0.9rem 1.7rem;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.reach :global(.button):hover {
+  background: var(--earth);
+  filter: none;
+}
+
 @media (max-width: 900px) {
   .header {
     flex-wrap: wrap;

@@ -430,6 +430,20 @@
   margin-top: 0.85rem;
 }
 
+.ask :global(.button) {
+  background: var(--dustyRose);
+  color: var(--cream);
+  border-radius: 3rem;
+  padding: 0.95rem 2rem 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--blush) 25%, transparent);
+}
+
+.ask :global(.button):hover {
+  background: var(--rose);
+  filter: none;
+}
+
 @media (max-width: 800px) {
   .letterGrid,
   .offer,

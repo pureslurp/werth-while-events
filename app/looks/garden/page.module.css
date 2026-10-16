@@ -405,6 +405,19 @@
   margin-top: 0.8rem;
 }
 
+.ask :global(.button) {
+  background: var(--rose);
+  color: var(--cream);
+  border-radius: 2rem;
+  padding: 0.9rem 1.8rem 0.8rem;
+  font-weight: 500;
+}
+
+.ask :global(.button):hover {
+  background: var(--blush);
+  filter: none;
+}
+
 @media (max-width: 800px) {
   .letterGrid,
   .offer,
