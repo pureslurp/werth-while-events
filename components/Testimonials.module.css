@@ -7,6 +7,19 @@
   background: color-mix(in srgb, currentColor 4%, transparent);
 }
 
+.heading {
+  margin: 0 0 1.1rem;
+  padding-inline: clamp(1.25rem, 4vw, 2.25rem);
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.62;
+}
+
 .marquee {
   overflow: hidden;
   mask-image: linear-gradient(
