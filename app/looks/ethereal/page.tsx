@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Libre_Baskerville, Inter } from "next/font/google";
 import { InquiryForm } from "@/components/InquiryForm";
+import { Testimonials } from "@/components/Testimonials";
 import { PhotoSlot } from "@/components/PhotoSlot";
 import { ReasonLine } from "@/components/ReasonLine";
 import {
@@ -184,6 +185,8 @@ export default function EtherealPage() {
             </article>
           </div>
         </section>
+
+        <Testimonials />
 
         <section className={styles.contact} id="contact" aria-labelledby="contact-title">
           <div className={styles.contactInner}>

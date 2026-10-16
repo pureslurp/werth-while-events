@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Bodoni_Moda } from "next/font/google";
 import { InquiryForm } from "@/components/InquiryForm";
+import { Testimonials } from "@/components/Testimonials";
 import { PhotoSlot } from "@/components/PhotoSlot";
 import { ReasonLine } from "@/components/ReasonLine";
 import {
@@ -172,6 +173,8 @@ export default function InvitationPage() {
             </article>
           </div>
         </section>
+
+        <Testimonials />
 
         <section className={styles.ask} id="contact" aria-labelledby="contact-title">
           <h2 id="contact-title">

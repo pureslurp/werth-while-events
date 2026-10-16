@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Spectral, Work_Sans } from "next/font/google";
 import { InquiryForm } from "@/components/InquiryForm";
+import { Testimonials } from "@/components/Testimonials";
 import { PhotoSlot } from "@/components/PhotoSlot";
 import { ReasonLine } from "@/components/ReasonLine";
 import {
@@ -195,6 +196,8 @@ export default function WhisperPage() {
             </article>
           </div>
         </section>
+
+        <Testimonials />
 
         <section className={styles.connect} id="contact" aria-labelledby="connect-heading">
           <h2 id="connect-heading">let&apos;s yap</h2>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Crimson_Text, Karla } from "next/font/google";
 import { InquiryForm } from "@/components/InquiryForm";
+import { Testimonials } from "@/components/Testimonials";
 import { PhotoSlot } from "@/components/PhotoSlot";
 import { ReasonLine } from "@/components/ReasonLine";
 import {
@@ -181,6 +182,8 @@ export default function BloomPage() {
             </div>
           </div>
         </section>
+
+        <Testimonials />
 
         <section className={styles.reach} id="contact" aria-labelledby="contact-title">
           <div className={styles.reachWrap}>
