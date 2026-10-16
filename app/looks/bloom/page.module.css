@@ -400,6 +400,29 @@
 }
 
 @media (max-width: 900px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 1.2rem 1.5rem;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    gap: 1.2rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 2rem 1.5rem;
+  }
+
   .heroLayout,
   .missionGrid,
   .offeringMain,
@@ -408,19 +431,48 @@
     grid-template-columns: 1fr;
   }
 
-  .personCard:nth-child(odd) {
-    grid-template-columns: 1fr;
+  .heroVisual {
+    height: 12rem;
   }
 
-  .personCard:nth-child(odd) .personImage {
-    order: 1;
+  .circleDecor {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .mission,
+  .offerings,
+  .people,
+  .reach {
+    padding: 2.5rem 1.5rem;
   }
 
   .missionContent {
     padding-right: 0;
   }
 
+  .personCard {
+    grid-template-columns: 8rem 1fr;
+    gap: 1.5rem;
+  }
+
+  .personCard:nth-child(odd) {
+    grid-template-columns: 8rem 1fr;
+  }
+
+  .personCard:nth-child(odd) .personImage {
+    order: 1;
+  }
+
   .accent {
     width: 50%;
+  }
+
+  .rundown {
+    padding: 1.2rem;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem;
   }
 }

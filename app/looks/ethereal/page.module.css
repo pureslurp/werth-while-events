@@ -457,33 +457,57 @@
 }
 
 @media (max-width: 900px) {
+  .page {
+    display: block;
+  }
+
   .sideNav {
     position: static;
     width: 100%;
     height: auto;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid var(--mist);
   }
 
   .navBrand {
     writing-mode: horizontal-tb;
     margin-bottom: 0;
+    font-size: 1rem;
   }
 
   .navLinks {
     flex-direction: row;
     writing-mode: horizontal-tb;
-    gap: 1rem;
+    gap: 1.2rem;
+  }
+
+  .navLinks a {
+    font-size: 0.9rem;
   }
 
   .main {
     margin-left: 0;
   }
 
+  .heroRing {
+    width: 60vw;
+    height: 60vw;
+  }
+
   .introSplit,
   .profile {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .serviceCard {
+    padding: 1.5rem;
+  }
+
+  .timeline {
+    padding: 1.5rem;
   }
 }

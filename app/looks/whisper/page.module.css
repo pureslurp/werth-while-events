@@ -417,14 +417,51 @@
 @media (max-width: 700px) {
   .header {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .headerNav {
+    gap: 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .main {
+    padding: 0 1.5rem;
+  }
+
+  .opening {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .essence,
+  .foundation,
+  .services,
+  .team {
+    padding: 2.5rem 0;
+  }
+
+  .connect {
+    padding: 2.5rem 0;
   }
 
   .serviceTop {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .example {
+    padding: 1.5rem;
+  }
+
+  .example td:first-child {
+    width: 4.5rem;
   }
 
   .member {
@@ -434,6 +471,11 @@
 
   .memberPhoto {
     grid-row: auto;
+    max-width: 12rem;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem;
   }
 
   .footerTop {
