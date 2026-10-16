@@ -364,7 +364,7 @@
 .ask h2 {
   margin-bottom: 1.8rem;
   font-size: clamp(4rem, 9vw, 6rem);
-  text-align: center;
+  text-align: left;
   color: var(--ink);
   font-weight: 600;
 }
