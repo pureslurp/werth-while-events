@@ -1,7 +1,7 @@
 .bar {
   width: 100%;
   margin: 0;
-  padding: clamp(1.25rem, 3vw, 1.75rem) 0;
+  padding: clamp(1.75rem, 4vw, 2.35rem) 0;
   color: inherit;
   border-block: 1px solid color-mix(in srgb, currentColor 12%, transparent);
   background: color-mix(in srgb, currentColor 4%, transparent);
@@ -21,9 +21,9 @@
 .track {
   display: flex;
   width: max-content;
-  gap: 0.85rem;
-  padding-inline: 0.85rem;
-  animation: marquee 55s linear infinite;
+  gap: 1.35rem;
+  padding-inline: 1.35rem;
+  animation: marquee 62s linear infinite;
 }
 
 .marquee:hover .track {
@@ -48,16 +48,16 @@
 
 .staticTrack {
   display: flex;
-  gap: 0.85rem;
-  padding-inline: clamp(1rem, 4vw, 2rem);
+  gap: 1.35rem;
+  padding-inline: clamp(1.25rem, 4vw, 2.25rem);
   width: max-content;
 }
 
 .chip {
   flex: 0 0 auto;
-  width: min(19rem, 78vw);
+  width: min(28rem, 88vw);
   margin: 0;
-  padding: 0.75rem 1rem;
+  padding: 1rem 1.25rem;
   border-radius: 0.65rem;
   background: color-mix(in srgb, currentColor 7%, transparent);
   box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 10%, transparent);
@@ -70,12 +70,8 @@
 .chip p {
   margin: 0;
   font-family: var(--font-body), Palatino, serif;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
+  font-size: 0.98rem;
+  line-height: 1.5;
 }
 
 .chip figcaption {
@@ -83,9 +79,9 @@
   flex-wrap: wrap;
   gap: 0.35rem 0.6rem;
   align-items: baseline;
-  margin-top: 0.55rem;
+  margin-top: 0.7rem;
   font-family: var(--font-body), Palatino, serif;
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   line-height: 1.3;
 }
 
