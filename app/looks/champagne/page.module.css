@@ -307,16 +307,16 @@
   gap: 0.1rem;
 }
 
-.saturday div {
+.saturday dl > div {
   display: grid;
-  grid-template-columns: 5.8rem minmax(0, 1fr);
+  grid-template-columns: minmax(4.75rem, max-content) minmax(0, 1fr);
   gap: 0.4rem 1.5rem;
   align-items: baseline;
   padding: 1rem 0;
   border-bottom: 1px solid color-mix(in srgb, var(--gold) 15%, transparent);
 }
 
-.saturday div:last-child {
+.saturday dl > div:last-child {
   border-bottom: none;
 }
 
