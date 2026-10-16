@@ -114,7 +114,7 @@
 }
 
 .mission {
-  padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 5vw, 4rem);
+  padding: clamp(4.5rem, 10vw, 7.5rem) clamp(1.5rem, 5vw, 4rem) clamp(3rem, 8vw, 6rem);
   background: linear-gradient(180deg, var(--petal), color-mix(in srgb, var(--blush) 20%, var(--petal)));
 }
 
