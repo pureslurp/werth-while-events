@@ -15,7 +15,6 @@ import styles from "./page.module.css";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });

@@ -15,7 +15,6 @@ import styles from "./page.module.css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "600"],
   variable: "--font-display",
   display: "swap",
 });
