@@ -34,7 +34,7 @@
 .track {
   display: flex;
   width: max-content;
-  gap: 1.35rem;
+  gap: 2.25rem;
   padding-inline: 1.35rem;
   animation: marquee 62s linear infinite;
 }
@@ -61,7 +61,7 @@
 
 .staticTrack {
   display: flex;
-  gap: 1.35rem;
+  gap: 2.25rem;
   padding-inline: clamp(1.25rem, 4vw, 2.25rem);
   width: max-content;
 }
