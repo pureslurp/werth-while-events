@@ -18,7 +18,10 @@ export function Testimonials() {
   const loop = reduceMotion ? testimonials : [...testimonials, ...testimonials];
 
   return (
-    <section className={styles.bar} aria-label="Kind words from clients">
+    <section className={styles.bar} aria-labelledby="kind-words-heading">
+      <h2 className={styles.heading} id="kind-words-heading">
+        Kind words
+      </h2>
       <div className={reduceMotion ? styles.static : styles.marquee}>
         <div className={reduceMotion ? styles.staticTrack : styles.track}>
           {loop.map((item, itemIndex) => (
