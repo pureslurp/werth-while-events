@@ -43,9 +43,8 @@
 .navLinks {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
 }
 
 .navLinks a {
@@ -53,6 +52,8 @@
   letter-spacing: 0.08em;
   text-decoration: none;
   color: var(--stone);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
   transition: color 0.3s ease;
 }
 
@@ -62,9 +63,7 @@
 
 .main {
   margin-left: 5rem;
-  flex: 1;
-  max-width: 1400px;
-  width: 100%;
+  width: calc(100% - 5rem);
 }
 
 .hero {
@@ -480,8 +479,11 @@
 
   .navLinks {
     flex-direction: row;
-    writing-mode: horizontal-tb;
     gap: 1.2rem;
+  }
+
+  .navLinks a {
+    writing-mode: horizontal-tb;
   }
 
   .navLinks a {
@@ -490,6 +492,7 @@
 
   .main {
     margin-left: 0;
+    width: 100%;
   }
 
   .heroRing {
