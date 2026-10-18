@@ -37,8 +37,7 @@ export default function WhisperPage() {
     <div className={`${spectral.variable} ${workSans.variable} ${styles.page}`}>
       <header className={styles.header}>
         <Link className={styles.logo} href="/looks/whisper">
-          <span>Werth While</span>
-          <span>Events</span>
+          Werth While Events
         </Link>
         <nav className={styles.headerNav} aria-label="Page">
           <Link href="/looks/whisper#services">Services</Link>
@@ -49,11 +48,14 @@ export default function WhisperPage() {
 
       <main id="content" className={styles.main}>
         <section className={styles.opening} aria-labelledby="hero-title">
-          <h1 id="hero-title">
+          <h1 className={styles.brandName} id="hero-title">
+            Werth While Events
+          </h1>
+          <p className={styles.tagline}>
             always a reason
             <br />
             to celebrate.
-          </h1>
+          </p>
           <ReasonLine />
           <p className={styles.location}>Metro Detroit and Northern Michigan</p>
         </section>

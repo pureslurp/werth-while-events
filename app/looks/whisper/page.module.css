@@ -22,13 +22,10 @@
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
   font-family: var(--font-display), serif;
-  font-size: 1.1rem;
-  font-weight: 300;
-  letter-spacing: 0.03em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   line-height: 1.2;
   color: var(--onyx);
   text-decoration: none;
@@ -62,12 +59,22 @@
   border-bottom: 1px solid var(--sand);
 }
 
-.opening h1 {
+.brandName {
   font-family: var(--font-display), serif;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+  color: var(--onyx);
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.65rem, 3.6vw, 2.5rem);
   font-weight: 300;
-  line-height: 1.3;
-  margin: 0 0 2rem;
+  line-height: 1.35;
+  margin: 0 0 1.5rem;
   color: var(--granite);
 }
 
@@ -439,7 +446,7 @@
   }
 
   .logo {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   .headerNav {
