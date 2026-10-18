@@ -1,0 +1,518 @@
+.page {
+  --whisper: #fbf9f7;
+  --sand: #f0ebe4;
+  --nude: #dfd5ca;
+  --clay: #b8a898;
+  --stone: #897968;
+  --granite: #5a4e43;
+  --onyx: #2d2823;
+  min-height: 100vh;
+  background: var(--whisper);
+  color: var(--onyx);
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem clamp(1.5rem, 6vw, 5rem);
+  border-bottom: 1px solid var(--sand);
+}
+
+.logo {
+  font-family: var(--font-display), serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: var(--onyx);
+  text-decoration: none;
+}
+
+.headerNav {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+.headerNav a {
+  color: var(--stone);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.headerNav a:hover {
+  color: var(--granite);
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 6vw, 5rem);
+}
+
+.opening {
+  padding: clamp(5rem, 15vw, 10rem) 0 clamp(4rem, 12vw, 8rem);
+  text-align: center;
+  border-bottom: 1px solid var(--sand);
+}
+
+.brandName {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 1.25rem;
+  color: var(--onyx);
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.65rem, 3.6vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.35;
+  margin: 0 0 1.5rem;
+  color: var(--granite);
+}
+
+.location {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clay);
+}
+
+.essence {
+  padding: clamp(5.5rem, 12vw, 8.5rem) 0 clamp(4rem, 10vw, 7rem);
+  border-bottom: 1px solid var(--sand);
+}
+
+.essence blockquote {
+  margin: 0;
+  text-align: center;
+}
+
+.essence p {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--granite);
+}
+
+.foundation {
+  padding: clamp(4rem, 10vw, 7rem) 0;
+  border-bottom: 1px solid var(--sand);
+}
+
+.foundationText {
+  max-width: 600px;
+  margin: 0 0 3rem;
+}
+
+.foundationText p {
+  margin: 0 0 1.5rem;
+  color: var(--granite);
+}
+
+.services {
+  padding: clamp(4rem, 10vw, 7rem) 0;
+  border-bottom: 1px solid var(--sand);
+}
+
+.services h2 {
+  font-family: var(--font-display), serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 3rem;
+  color: var(--clay);
+}
+
+.service {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--sand) 60%, transparent);
+}
+
+.service:last-of-type {
+  border-bottom: none;
+}
+
+.serviceTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.serviceTop h3 {
+  font-family: var(--font-display), serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--onyx);
+}
+
+.serviceTop p {
+  font-size: 0.9rem;
+  color: var(--clay);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.serviceIntro {
+  max-width: 550px;
+  margin: 0 0 1rem;
+  color: var(--granite);
+}
+
+.serviceDetails {
+  margin-top: 1.5rem;
+}
+
+.serviceDetails summary {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--stone);
+  cursor: pointer;
+  list-style: none;
+}
+
+.serviceDetails summary::-webkit-details-marker {
+  display: none;
+}
+
+.serviceDetails summary::before {
+  content: "+ ";
+  display: inline-block;
+  width: 1.2rem;
+  color: var(--clay);
+}
+
+.serviceDetails[open] summary::before {
+  content: "− ";
+}
+
+.serviceDetails ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.serviceDetails li {
+  padding: 0.4rem 0;
+  color: var(--granite);
+  font-size: 0.95rem;
+}
+
+.example {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--sand);
+}
+
+.example h4 {
+  font-family: var(--font-display), serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--onyx);
+}
+
+.exampleNote {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--stone);
+  margin: 0 0 1.5rem;
+}
+
+.example table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.example td {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--nude) 60%, transparent);
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+.example td:first-child {
+  width: 5rem;
+  font-weight: 500;
+  color: var(--stone);
+}
+
+.example td:last-child {
+  color: var(--granite);
+}
+
+.example tr:last-child td {
+  border-bottom: none;
+}
+
+.team {
+  padding: clamp(4rem, 10vw, 7rem) 0;
+  border-bottom: 1px solid var(--sand);
+}
+
+.team h2 {
+  font-family: var(--font-display), serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: var(--clay);
+}
+
+.teamIntro {
+  max-width: 550px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--granite);
+}
+
+.members {
+  display: grid;
+  gap: 4rem;
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 0 2rem;
+  align-items: start;
+}
+
+.memberPhoto {
+  grid-row: 1 / 4;
+}
+
+.member h3 {
+  font-family: var(--font-display), serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--onyx);
+}
+
+.title {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--clay);
+  margin: 0.3rem 0 1rem;
+}
+
+.memberBio p {
+  margin: 0 0 1rem;
+  color: var(--granite);
+}
+
+.connect {
+  padding: clamp(4rem, 10vw, 7rem) 0;
+}
+
+.connect h2 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 2rem;
+  color: var(--granite);
+}
+
+.connectText {
+  max-width: 550px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.connectText p {
+  margin: 0 0 1rem;
+  color: var(--granite);
+}
+
+.connectText a {
+  color: var(--stone);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--clay) 50%, transparent);
+  transition: border-color 0.2s ease;
+}
+
+.connectText a:hover {
+  border-bottom-color: var(--clay);
+}
+
+.footer {
+  padding: 3rem clamp(1.5rem, 6vw, 5rem);
+  background: var(--sand);
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--nude) 60%, transparent);
+}
+
+.footerName {
+  font-family: var(--font-display), serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--onyx);
+}
+
+.footerDetails {
+  text-align: right;
+  font-size: 0.9rem;
+  color: var(--stone);
+}
+
+.footerDetails p {
+  margin: 0 0 0.3rem;
+}
+
+.footerDetails a {
+  color: var(--stone);
+  text-decoration: none;
+}
+
+.footerDetails a:hover {
+  text-decoration: underline;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--clay);
+}
+
+.footerBottom p {
+  margin: 0;
+}
+
+.footerBottom a {
+  color: var(--clay);
+  text-decoration: none;
+}
+
+.footerBottom a:hover {
+  text-decoration: underline;
+}
+
+.connect :global(.button) {
+  background: var(--granite);
+  color: var(--whisper);
+  border-radius: 0;
+  padding: 0.85rem 1.5rem;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.connect :global(.button):hover {
+  background: var(--onyx);
+  filter: none;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  .headerNav {
+    gap: 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .main {
+    padding: 0 1.5rem;
+  }
+
+  .opening {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .essence,
+  .foundation,
+  .services,
+  .team {
+    padding: 2.5rem 0;
+  }
+
+  .connect {
+    padding: 2.5rem 0;
+  }
+
+  .serviceTop {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .example {
+    padding: 1.5rem;
+  }
+
+  .example td:first-child {
+    width: 4.5rem;
+  }
+
+  .member {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .memberPhoto {
+    grid-row: auto;
+    max-width: 12rem;
+  }
+
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .footerTop {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footerDetails {
+    text-align: left;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}

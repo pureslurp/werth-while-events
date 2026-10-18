@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Choose a look",
-  description: "Three ways to present Werth While Events.",
+  description: "Ways to present Werth While Events.",
 };
 
 const looks = [
@@ -23,15 +23,45 @@ const looks = [
     name: "The day",
     note: "The plan comes first. A sample Saturday is on the opening screen.",
   },
+  {
+    href: "/looks/garden",
+    name: "Garden",
+    note: "Sage, cream, and blush, with soft blobs and a botanical serif.",
+  },
+  {
+    href: "/looks/champagne",
+    name: "Champagne",
+    note: "Gold, cream, and dusty rose. A quieter, more formal poster.",
+  },
+  {
+    href: "/looks/blush",
+    name: "Blush",
+    note: "Dusty rose and cream, with rounded shapes and a softer type pairing.",
+  },
+  {
+    href: "/looks/ethereal",
+    name: "Ethereal",
+    note: "A side wordmark and an editorial layout in taupe and stone.",
+  },
+  {
+    href: "/looks/bloom",
+    name: "Bloom",
+    note: "An asymmetric page in coral and leaf green, with the plan set beside the offer.",
+  },
+  {
+    href: "/looks/whisper",
+    name: "Whisper",
+    note: "A spare page. The line comes first, and the services stay tucked until you open them.",
+  },
 ];
 
 export default function ChooseLookPage() {
   return (
     <main id="content" className={styles.main}>
       <p className={styles.business}>Werth While Events</p>
-      <h1>Three looks</h1>
+      <h1>Choose a look</h1>
       <p className={styles.intro}>
-        Same business, three ways to present it. Open one and click through the page.
+        Same business, several ways to present it. Open one and click through the page.
       </p>
       <ul className={styles.list}>
         {looks.map((look) => (

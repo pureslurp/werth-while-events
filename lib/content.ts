@@ -51,6 +51,39 @@ export const otherEvents = [
   "Other",
 ];
 
+export const testimonials = [
+  {
+    quote:
+      "Danielle and Jake were our day of coordinators for our wedding in September. We could not have imagined it without them. Every detail was taken care of and made our wedding day so much more relaxing and enjoyable. Highly recommend!",
+    name: "Sav & Sean",
+    detail: "Wedding, September",
+  },
+  {
+    quote:
+      "They kept us ahead of the timeline without making it feel rigid. We actually got to enjoy cocktail hour.",
+    name: "Morgan",
+    detail: "Wedding, Metro Detroit",
+  },
+  {
+    quote:
+      "Clear communication, calm energy, and a plan that held up when the day got busy. Worth every penny.",
+    name: "Jordan",
+    detail: "Day-of coordination",
+  },
+  {
+    quote:
+      "From vendor emails to the last dance, they handled the details we would have stressed over.",
+    name: "Alex",
+    detail: "Wedding, Northern Michigan",
+  },
+  {
+    quote:
+      "Our welcome dinner and wedding weekend ran smoothly because they were already thinking two steps ahead.",
+    name: "Taylor",
+    detail: "Weekend events",
+  },
+] as const;
+
 export const sampleRun = [
   { time: "12:00 pm", detail: "Vendor check-in and setup" },
   { time: "2:00 pm", detail: "Ceremony details confirmed on site" },

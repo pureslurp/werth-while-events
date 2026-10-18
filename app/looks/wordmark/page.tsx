@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { InquiryForm } from "@/components/InquiryForm";
+import { Testimonials } from "@/components/Testimonials";
 import { PhotoSlot } from "@/components/PhotoSlot";
 import { ReasonLine } from "@/components/ReasonLine";
 import {
@@ -172,6 +173,8 @@ export default function WordmarkPage() {
             </div>
           </div>
         </section>
+
+        <Testimonials />
 
         <section className={styles.ask} id="contact" aria-labelledby="contact-title">
           <div className={styles.wrap}>

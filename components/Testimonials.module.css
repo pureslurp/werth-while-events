@@ -1,0 +1,124 @@
+.bar {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(1.75rem, 4vw, 2.35rem) 0;
+  color: inherit;
+  border-block: 1px solid color-mix(in srgb, currentColor 7%, transparent);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, currentColor 4%, transparent),
+    transparent 55%,
+    color-mix(in srgb, currentColor 3%, transparent)
+  );
+}
+
+.heading {
+  width: min(68rem, calc(100% - 2 * clamp(1.25rem, 4vw, 3rem)));
+  margin: 0 auto 1.1rem;
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.58;
+}
+
+.marquee {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 2.25rem;
+  padding-inline: max(1.35rem, calc((100vw - min(68rem, 100% - 2 * clamp(1.25rem, 4vw, 3rem))) / 2 + 1.35rem));
+  animation: marquee 62s linear infinite;
+}
+
+.marquee:hover .track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.static {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  padding-inline: clamp(1.25rem, 4vw, 2.25rem);
+}
+
+.staticTrack {
+  display: flex;
+  gap: 2.25rem;
+  width: max-content;
+}
+
+.chip {
+  flex: 0 0 auto;
+  width: min(28rem, 88vw);
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background: color-mix(in srgb, currentColor 5%, transparent);
+  border: 1px solid color-mix(in srgb, currentColor 9%, transparent);
+}
+
+.chip blockquote {
+  margin: 0;
+}
+
+.chip p {
+  margin: 0;
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.chip figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  align-items: baseline;
+  margin-top: 0.7rem;
+  font-family: var(--font-body), Palatino, serif;
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name::before {
+  content: "— ";
+  font-weight: 400;
+  opacity: 0.65;
+}
+
+.detail {
+  opacity: 0.62;
+}
+
+.detail::before {
+  content: "·";
+  margin-right: 0.35rem;
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}
